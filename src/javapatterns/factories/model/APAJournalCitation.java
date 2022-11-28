@@ -3,7 +3,7 @@ package javapatterns.factories.model;
 /**
  * APA bibliography style for a Journal:
  *
- *  - #AUTHOR#, "#TITLE#", #JOURNAL_TITLE#, vol. #VOLUME#, pp. #PAGE_NUMBERS#, #YEAR#.
+ *  - [author] ([year]). "[title]." [journal_title], [volume_issue], [pages].
  *
  * @author brunomnsilva
  */
@@ -28,6 +28,7 @@ public class APAJournalCitation implements Citation {
 
     @Override
     public String toStringFormatted() {
+        //[author] ([year]). "[title]." [journal_title], [volume_issue], [pages].
         return "//TODO: apply citation style format";
     }
 

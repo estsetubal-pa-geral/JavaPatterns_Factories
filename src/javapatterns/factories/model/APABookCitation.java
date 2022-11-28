@@ -3,7 +3,7 @@ package javapatterns.factories.model;
 /**
  * APA bibliography style for a Book:
  *
- *  - #AUTHOR#, #TITLE#, #PLACE#: #PUBLISHER#, #YEAR#.
+ *  - [author] ([year]). [title]. [publisher].
  *
  * @author brunomnsilva
  */
@@ -25,6 +25,7 @@ public class APABookCitation implements Citation {
 
     @Override
     public String toStringFormatted() {
+        //[author] ([year]). [title]. [publisher].
         return "//TODO: apply citation style format";
     }
 

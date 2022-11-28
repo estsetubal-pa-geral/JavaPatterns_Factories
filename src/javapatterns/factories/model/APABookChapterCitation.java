@@ -3,7 +3,7 @@ package javapatterns.factories.model;
 /**
  * APA bibliography style for a Book Chapter:
  *
- *  - #AUTHOR#, "#TITLE#" in #BOOK_TITLE#, #EDITOR#, Ed. #PLACE#: #PUBLISHER#, #YEAR#. #PAGE_NUMBERS#.
+ *  - [author] ([year]). [title]. In [editor] (Eds.), [book_title]. (pp. [pages]). [publisher].
  *
  * @author brunomnsilva
  */
@@ -32,6 +32,7 @@ public class APABookChapterCitation implements Citation {
 
     @Override
     public String toStringFormatted() {
+        //[author] ([year]). [title]. In [editor] (Eds.), [book_title]. (pp. [pages]). [publisher].
         return "//TODO: apply citation style format";
     }
 
